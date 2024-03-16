@@ -10,7 +10,7 @@ public class InventarisApp <T extends Barang> {
 
     public void tampilkanDaftarBarang() {
         for(T barang : inventaris) {
-            System.out.println("\nKode Barang\t: " +barang.namaBarang);
+            System.out.println("\nKode Barang\t: " +barang.kodeBarang+"Nama Barang\t: " + barang.namaBarang);
         }
     }
 
