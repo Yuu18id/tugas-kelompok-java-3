@@ -24,4 +24,13 @@ public class InventarisApp <T extends Barang> {
         }
         return total;
     }
+
+    // Method untuk menghitung rasio dua nilai
+    public double hitungRasio(double nilai1, double nilai2) {
+        // Penanganan exception untuk pembagian dengan nol
+        if (nilai2 == 0) {
+            throw new ArithmeticException("Pembagian dengan nol tidak diperbolehkan");
+        }
+        return nilai1 / nilai2;
+    }
 }
